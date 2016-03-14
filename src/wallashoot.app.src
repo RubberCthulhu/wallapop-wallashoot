@@ -1,0 +1,13 @@
+{application, wallashoot,
+	      [{description, "Wallashoot"},
+	      	{vsn, "0.1.0"},
+		{modules, [
+				wallashoot_app,
+				wallashoot_sup,
+				wallashoot
+			]},
+		{registered, [wallashoot_sup]},
+		{applications, [kernel, stdlib]},
+		{mod, {wallashoot_app, []}}
+]}.
+
